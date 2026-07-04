@@ -1,0 +1,4676 @@
+/*THIS IS FOR LAPTOP LARGE, WITH 1440px and 600px */
+
+@media screen and (min-width:1025px) and (max-width:1440px) and (height >= 600px) {
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+html::-webkit-scrollbar {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #a855f7 #f1f5f9; 
+}
+html::-webkit-scrollbar {
+    width: 15px; 
+}
+html::-webkit-scrollbar-track {
+    background: #f4f4fa; 
+    border-radius: 7px;
+}
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4f46e5 0%, #a855f7 50%, #db2777 100%);
+    border-radius: 10px;
+    border: 1.5px solid black; 
+}
+.navbar ul{
+    position: relative;
+    top: -1vh;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+.navbar{
+    margin-top: -60px;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+.navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+#navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+#menu-toggle, .hamburger{
+    display: none;
+}
+#home-container{
+    height: 110vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 30px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    left: 2.2vw;
+    margin: 0 auto;
+    width: 15vw;
+    text-align: center;
+    padding: 10px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    left: 26vw;
+    margin: 0 auto;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: 1.1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 35vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#viewprojects:hover{
+    opacity: 90%;
+    cursor: default;
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 42vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+#Resume:hover{
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 45.2vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+#about{
+    position: relative;
+    top: 10vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    justify-content: space-around;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-box{
+    position: relative;
+    top: 11vh;
+    width: 18vw;
+    height: 32vh;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 0px 4.5px 2.5px rgba(0, 0, 0, 0.3); 
+}
+.about-box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+    cursor: default;
+    
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 4vw;
+    height: 7vh;
+    margin-left: 23.5px;
+    margin-top: 15px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 47px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    top: 2vh;
+    left: -2.1vw;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 3vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    top: 1vh;
+    left: -0.1vw;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+#about-box2 > p{
+    position: relative;
+    top: -0.5vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    top: 1.5vh;
+    left: -0.9vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 2.7vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    top: 1vh;
+    left: 0.3vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 2.7vh;
+    display: block;
+    font-size: 0.73em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    top: 17vh;
+    left: -6vw;
+    margin: 0 auto;
+    height: 55vh;
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 38vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 140vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4em;
+    color: #7F9094;
+}
+.cards-container{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.card{
+    position: relative;
+    top: 25vh;
+    width:320px;
+    height: 86.4vh;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s ease;
+}
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+.card-image{
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:transform 0.4s ease;
+    box-shadow: black 20px 20px;
+}
+.card:hover img{
+    transform:scale(1.1);
+    box-shadow:  0 20px 40px rgba(168, 40, 40, 0.25);
+}
+.card-content{
+    padding:22px;
+}
+.card h2{
+    font-size:30px;
+    margin-bottom:12px;
+    color:#111827;
+}
+.card p{
+    color:#6b7280;
+    top: 0.5vh;
+    line-height:1.5;
+    margin-bottom:18px;
+}
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.tag{
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+.featured-links{
+    display: flex;
+    gap: 8px;
+}
+.btn {
+    position: relative;
+    top: 4vh;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 43vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top: 4vh;
+    left: 39vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 6vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+}
+.contact-card{
+    position: relative;
+    left: 8vw;
+    top: 32vh;
+    background: white;
+    border-radius: 18px;
+    width: 35vw;
+    height: 10vh;
+    padding: 14px;
+    margin-bottom: 25px;    
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.08),
+    0 2px 4px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+.icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f7cff, #8b2cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 0;
+    }
+.contact-info h4{
+    color: #7a7a7a;
+    position: absolute;
+    top: -2vh;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info p{
+    color: #111;
+    font-size: 22px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info a{
+    text-decoration: none;
+}
+.contact-info a > p:hover{
+    color: #245cff;
+    transition: all 0.2s ease;
+}
+#Contact-Information{
+    position: relative;
+    top: 26vh;
+    right: -8vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 57vw;
+    top: -40vh;
+    height: 70vh;
+    width: 25vw;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 37vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: -53vh;
+    left: 8vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 33.5vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+#footer{
+    margin-top: -40vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+.footer-section h3{
+    margin-bottom:20px;
+}
+.footer-section p{
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.footer-section ul{
+    position: relative;
+    left: -2.7vw;
+    list-style:none;
+}
+.footer-section ul li{
+    margin-bottom:14px;
+}
+.footer-section ul li a{
+    color:#b7c0d1;
+    text-decoration:none;
+    transition:0.3s;
+}
+.footer-section ul li a:hover{
+    color:white;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}}
+
+
+
+/* THIS IS FOR LAPTOP MEDIUM, WITH 1024px */
+
+
+
+@media screen and (min-width:769px) and (max-width:1024px) and (height >= 600px) {
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+html::-webkit-scrollbar {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #a855f7 #f1f5f9; 
+}
+html::-webkit-scrollbar {
+    width: 15px; 
+}
+html::-webkit-scrollbar-track {
+    background: #f4f4fa; 
+    border-radius: 7px;
+}
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4f46e5 0%, #a855f7 50%, #db2777 100%);
+    border-radius: 10px;
+    border: 1.5px solid black; 
+}
+.navbar ul{
+    position: relative;
+    top: -1vh;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+}
+.navbar{
+    margin-top: -60px;
+}
+.navbar li{
+    display: inline-block;
+    margin-right: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+.navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+#navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+#menu-toggle, .hamburger{
+    display: none;
+}
+#home-container{
+    height: 110vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 30px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    left: 2vw;
+    margin: 0 auto;
+    width: 20vw;
+    text-align: center;
+    padding: 10px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    left: 17vw;
+    margin: 0 auto;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: 1.1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 30vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#viewprojects:hover{
+    opacity: 90%;
+    cursor: default;
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 40vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+#Resume:hover{
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 44.3vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+#about{
+    position: relative;
+    top: 10vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3em;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    justify-content: center;
+    /* Cleaned up font stack */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    gap: 20px;            /* Consistent spacing between elements */
+    width: 100%;
+    padding: 40px 20px;   
+    box-sizing: border-box;
+}
+.about-box{
+    position: relative;
+    top: 2vh;
+    width: 22%;   
+    height: 40vh;        
+    min-width: 220px;     
+    padding: 30px 15px;   
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 0px 4.5px 2.5px rgba(0, 0, 0, 0.15); 
+    box-sizing: border-box;
+}
+.about-box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+    cursor: default;
+    
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 4vw;
+    height: 7vh;
+    margin-left: 23.5px;
+    margin-top: 15px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 47px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    top: 2vh;
+    left: -2.1vw;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 3vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    top: 1vh;
+    left: -0.1vw;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+#about-box2 > p{
+    position: relative;
+    top: -0.5vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    top: 1.5vh;
+    left: -0.9vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 2.7vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    top: 1vh;
+    left: 0.3vw;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 2.7vh;
+    display: block;
+    font-size: 0.8em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    top: 6vh;
+    left: -6vw;
+    margin: 0 auto;
+    height: 65vh;
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 23vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 140vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: #7F9094;
+}
+.cards-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 230px; 
+    margin-bottom: 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    margin-top: -5vh;
+    width: 280px;
+    height: auto;
+    padding-bottom: 30px; 
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+    overflow: hidden;
+    height: 200px; /* Forces the container to stay consistent */
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    /* Removed the harsh solid black shadow */
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.card h2 {
+    font-size: 26px; /* Sized down slightly so long titles don't break lines awkwardly */
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #111827;
+}
+
+.card p {
+    color: #6b7280;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 20px; /* Safely pushes the tags down */
+    /* REMOVED: top: 0.5vh; */
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px; /* Safely pushes the buttons down */
+}
+
+.tag {
+    background: #e0e7ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.featured-links {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    font-size: 12.4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+    
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 28vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top:  0.5vh;
+    left: 36vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+}
+.contact-card{
+    position: relative;
+    left: 8vw;
+    top: 16vh;
+    background: white;
+    border-radius: 18px;
+    width: 35vw;
+    height: 10vh;
+    padding: 14px;
+    margin-bottom: 25px;    
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.08),
+    0 2px 4px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+.icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f7cff, #8b2cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 0;
+    }
+.contact-info h4{
+    color: #7a7a7a;
+    position: absolute;
+    top: -2vh;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info p{
+    position: relative;
+    top: 0.7vh;
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info a{
+    text-decoration: none;
+}
+.contact-info a > p:hover{
+    color: #245cff;
+    transition: all 0.2s ease;
+}
+#Contact-Information{
+    position: relative;
+    top: 14vh;
+    right: -8vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 54vw;
+    top: -44vh;
+    height: 70vh;
+    width: 34vw;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    left: 0vw;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 37vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    margin-left: 0vw;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: -67vh;
+    left: 8vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 37vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    position: relative;
+    top: -2.6vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#footer{
+    margin-top: -55vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+.footer-section h3{
+    margin-bottom:20px;
+}
+.footer-section p{
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.footer-section ul{
+    position: relative;
+    left: -2.7vw;
+    list-style:none;
+}
+.footer-section ul li{
+    margin-bottom:14px;
+}
+.footer-section ul li a{
+    color:#b7c0d1;
+    text-decoration:none;
+    transition:0.3s;
+}
+.footer-section ul li a:hover{
+    color:white;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}}
+
+/* THIS IS FOR TABLET, WITH 768px */
+
+@media (max-width: 768px) and (min-width: 426px) {
+
+ /* 1. HIDE THE RAW CHECKBOX */
+    #menu-toggle {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3.5vh; 
+        right: 30px;
+        cursor: pointer;
+        z-index: 1002; /* Keeps icon layered above the blur layer */
+    }
+    #navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #57534C;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+
+    /* 1. The Navbar turns into the full-screen blur backdrop */
+    .navbar {
+        margin-top: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        /* Pulls the absolute visual center coordinates */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* Hides overlay background backdrop layer by default */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1001;
+    }
+
+    /* 2. The Link List transforms into the standalone floating container */
+    .navbar ul {
+        background-color: white;
+        width: 85%; /* Sets width bound constraint */
+        max-width: 360px; /* Restricts excessive stretching on tablet displays */
+        padding: 40px 20px; /* Generates breathing space inside card boundaries */
+        border-radius: 20px; /* Generates modern rounded visual aesthetics */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Pulls card away from background depth */
+        text-align: center;
+        /* Drop-down pop and scaling entrance transition animation effects */
+        transform: scale(0.85) translateY(20px);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Clear any remaining inline structural parameters from desktop */
+    .navbar li {
+        display: block;
+        margin: 32px 0;
+    }
+    
+    /* Ensure the target CTA container resets spacing cleanly */
+    .navbar li:last-child {
+        margin-bottom: 0;
+    }
+    .navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+    /* --- THE CSS FUNCTIONAL MECHANICS --- */
+    
+    /* When active: applies structural visibility properties and triggers backdrop blur layout rules */
+    #menu-toggle:checked ~ .navbar {
+        opacity: 1;
+        pointer-events: auto;
+        background-color: rgba(255, 255, 255, 0.3); /* Semitransparent white canvas layer */
+        backdrop-filter: blur(15px); /* Triggers system rendering blur layer engine */
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    /* Snaps card up and pops it into perfect geometric positioning scales upon target evaluation */
+    #menu-toggle:checked ~ .navbar ul {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Morphs horizontal bar stacks into close window icons when checked execution states activate */
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+ html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+html::-webkit-scrollbar {
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #a855f7 #f1f5f9; 
+}
+html::-webkit-scrollbar {
+    width: 15px; 
+}
+html::-webkit-scrollbar-track {
+    background: #f4f4fa; 
+    border-radius: 7px;
+}
+html::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #4f46e5 0%, #a855f7 50%, #db2777 100%);
+    border-radius: 10px;
+    border: 1.5px solid black; 
+}
+  #home-container{
+    height: 110vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 10px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    margin-left: 38vw;
+    width: 27vw;
+    text-align: center;
+    padding: 10px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    margin-left: 7vw;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: 0vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 22vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#viewprojects:hover{
+    opacity: 90%;
+    cursor: default;
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 40vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+#Resume:hover{
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 44.3vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+#about{
+    position: relative;
+    top: 10vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    margin-left: -7vw;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 70px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-box{
+    /* calc(50% - 10px) ensures two cards take up exactly one row, 
+     subtracting half of the 20px gap so they fit perfectly side-by-side */
+  flex: 1 1 calc(50% - 10px); 
+  
+  box-sizing: border-box; /* Ensures padding/borders don't break the width */
+  
+  /* Optional styling to match your design */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.about-box:hover{
+    transform: translateY(-6px);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-out;
+    cursor: default;
+    
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 7vw;
+    height: 8vh;
+    margin-left: 23.5px;
+    margin-top: 1px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 50px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    margin-top: -10vh;
+    left: 0.5vw;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    margin-top: -10vh;
+    left: 4vw;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+#about-box2 > p{
+    position: relative;
+    top: 5.2vh;
+    left: 20px;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    margin-top: -10vh;
+    left: 1vw;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    margin-top: -10vh;
+    left: 1vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.75em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    margin-top: 15vh;
+    left: -6vw;
+    height: 66; 
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 18vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 220vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: #7F9094;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;        /* Puts cards side-by-side */
+    flex-wrap: wrap;            /* Allows cards to drop to a new line on smaller screens */
+    gap: 24px; 
+    margin: 0 auto;                 /* Adds clean spacing between the cards */
+    justify-content: center;    /* Centers the cards on the screen */
+    padding: 20px;
+    box-sizing:border-box;
+    padding: 130px 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.card {
+   flex: 0 1 calc(50% - 12px); 
+    max-width: 380px;          
+    min-width: 280px;   
+    margin-top: 1px;
+    margin-bottom: 40px;
+    /* REMOVE all min-height or max-height values completely */
+    height: 500; /* Forces every single card to be the EXACT same height */
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stacks image on top, content on bottom */
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+  }
+    .card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes this section fill the remaining card space */
+  }
+  .featured-links{
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+  }
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.tag{
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+.featured-links{
+    display: flex;
+    gap: 8px;
+}
+.btn {
+    position: relative;
+    top: 1vh;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 20vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top: 15vh;
+    left: 32vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 500px;
+}
+.contact-card{
+    position: relative;
+    left: 8vw;
+    top: 32vh;
+    background: white;
+    border-radius: 18px;
+    width: 40vw;
+    height: 10vh;
+    padding: 14px;
+    margin-bottom: 25px;    
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.08),
+    0 2px 4px rgba(0,0,0,0.04);
+    transition: 0.3s ease;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+.icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #4f7cff, #8b2cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    flex-shrink: 0;
+    }
+.contact-info h4{
+    color: #7a7a7a;
+    position: absolute;
+    top: -2vh;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info p{
+    color: #111;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact-info a{
+    text-decoration: none;
+}
+
+#Contact-Information{
+    position: relative;
+    top: 26vh;
+    right: -8vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 55vw;
+    top: -40vh;
+    height: 70vh;
+    width: 25vw;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 37vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 15px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: -53vh;
+    left: 8vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 38.5vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.75em;
+}
+#footer{
+    margin-top: -40vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:20px;
+    font-size:2rem;
+}
+.footer-section h3{
+    margin-bottom:20px;
+}
+.footer-section p{
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.footer-section ul{
+    position: relative;
+    left: -2.7vw;
+    list-style:none;
+}
+.footer-section ul li{
+    margin-bottom:14px;
+}
+.footer-section ul li a{
+    color:#b7c0d1;
+    text-decoration:none;
+    transition:0.3s;
+}
+.footer-section ul li a:hover{
+    color:white;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}}
+
+
+/* THIS IS FOR MOBILE LARGE WITH 425px */ 
+@media screen and (min-width:376px) and (max-width:425px){
+    /* 1. HIDE THE RAW CHECKBOX */
+    #menu-toggle {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3.5vh; 
+        right: 30px;
+        cursor: pointer;
+        z-index: 1002; /* Keeps icon layered above the blur layer */
+    }
+    #navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #57534C;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+
+    /* 1. The Navbar turns into the full-screen blur backdrop */
+    .navbar {
+        margin-top: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        /* Pulls the absolute visual center coordinates */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* Hides overlay background backdrop layer by default */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1001;
+    }
+
+    /* 2. The Link List transforms into the standalone floating container */
+    .navbar ul {
+        background-color: white;
+        width: 85%; /* Sets width bound constraint */
+        max-width: 360px; /* Restricts excessive stretching on tablet displays */
+        padding: 40px 20px; /* Generates breathing space inside card boundaries */
+        border-radius: 20px; /* Generates modern rounded visual aesthetics */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Pulls card away from background depth */
+        text-align: center;
+        /* Drop-down pop and scaling entrance transition animation effects */
+        transform: scale(0.85) translateY(20px);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Clear any remaining inline structural parameters from desktop */
+    .navbar li {
+        display: block;
+        margin: 32px 0;
+    }
+    
+    /* Ensure the target CTA container resets spacing cleanly */
+    .navbar li:last-child {
+        margin-bottom: 0;
+    }
+    .navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+    /* --- THE CSS FUNCTIONAL MECHANICS --- */
+    
+    /* When active: applies structural visibility properties and triggers backdrop blur layout rules */
+    #menu-toggle:checked ~ .navbar {
+        opacity: 1;
+        pointer-events: auto;
+        background-color: rgba(255, 255, 255, 0.3); /* Semitransparent white canvas layer */
+        backdrop-filter: blur(15px); /* Triggers system rendering blur layer engine */
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    /* Snaps card up and pops it into perfect geometric positioning scales upon target evaluation */
+    #menu-toggle:checked ~ .navbar ul {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Morphs horizontal bar stacks into close window icons when checked execution states activate */
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+ html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+
+  #home-container{
+    height: 130vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 10px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    margin-left: 28vw;
+    width: 47vw;
+    text-align: center;
+    padding: 10px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    margin-left: 7vw;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: -3vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 0.8em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 10vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#viewprojects:hover{
+    opacity: 90%;
+    cursor: default;
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 23vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 7px 2px 10px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 38vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+#about{
+    position: relative;
+    top: 12vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.67em;
+    margin-left: -10vw;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 70px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-box{
+    /* calc(50% - 10px) ensures two cards take up exactly one row, 
+     subtracting half of the 20px gap so they fit perfectly side-by-side */
+  flex: 1 1 calc(50% - 12px); 
+  
+  box-sizing: border-box; /* Ensures padding/borders don't break the width */
+  
+  /* Optional styling to match your design */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 12vw;
+    height: 8vh;
+    margin-left: -12px;
+    margin-top: -10px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 50px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    margin-top: -8vh;
+    left: 4vw;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    margin-top: -8vh;
+    left: 7vw;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+#about-box2 > p{
+    position: relative;
+    top: 3vh;
+    left: 2px;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 5.6vw;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 5.3vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.75em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    margin-top: 15vh;
+    left: -6vw;
+    height: 66; 
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 18vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 320vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: #7F9094;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;        /* Puts cards side-by-side */
+    flex-wrap: wrap;            /* Allows cards to drop to a new line on smaller screens */
+    margin: 0 auto;                 /* Adds clean spacing between the cards */
+    justify-content: center;    /* Centers the cards on the screen */
+    padding: 20px;
+    box-sizing:border-box;
+    padding: 130px 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.card {
+   flex: 0 1 calc(50% - 12px); 
+    max-width: 380px;          
+    min-width: 280px;   
+    margin-top: 1px;
+    margin-bottom: 30px;
+    /* REMOVE all min-height or max-height values completely */
+    height: 500; /* Forces every single card to be the EXACT same height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stacks image on top, content on bottom */
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+  }
+    .card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes this section fill the remaining card space */
+  }
+  .featured-links{
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+  }
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.tag{
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+.featured-links{
+    display: flex;
+    gap: 8px;
+}
+.btn {
+    position: relative;
+    top: 1vh;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top: 15vh;
+    left: 15vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+   display:none;
+}
+.contact-card{
+    display: none;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+
+#Contact-Information{
+    position: relative;
+    top: 26vh;
+    left: 18.3vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 15vw;
+    top: 30vh;
+    height: 70vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 70vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: 35vh;
+    left: 6vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 77.5vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.83em;
+}
+#footer{
+    margin-top: 45vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:10px;
+    font-size:2rem;
+}
+#footer-center{
+    display: none;
+}
+#footer-right{
+    display: none;
+}
+
+.footer-section p{
+    padding: 20px -25px;    
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}
+}
+
+/* THIS IS FOR MOBIEL MEDIUM WITH 375px */
+
+@media screen and (min-width:321px) and (max-width: 375px){
+     /* 1. HIDE THE RAW CHECKBOX */
+    #menu-toggle {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3.5vh; 
+        right: 30px;
+        cursor: pointer;
+        z-index: 1002; /* Keeps icon layered above the blur layer */
+    }
+    #navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #57534C;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+
+    /* 1. The Navbar turns into the full-screen blur backdrop */
+    .navbar {
+        margin-top: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        /* Pulls the absolute visual center coordinates */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* Hides overlay background backdrop layer by default */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1001;
+    }
+
+    /* 2. The Link List transforms into the standalone floating container */
+    .navbar ul {
+        background-color: white;
+        width: 85%; /* Sets width bound constraint */
+        max-width: 360px; /* Restricts excessive stretching on tablet displays */
+        padding: 40px 20px; /* Generates breathing space inside card boundaries */
+        border-radius: 20px; /* Generates modern rounded visual aesthetics */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Pulls card away from background depth */
+        text-align: center;
+        /* Drop-down pop and scaling entrance transition animation effects */
+        transform: scale(0.85) translateY(20px);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Clear any remaining inline structural parameters from desktop */
+    .navbar li {
+        display: block;
+        margin: 32px 0;
+    }
+    
+    /* Ensure the target CTA container resets spacing cleanly */
+    .navbar li:last-child {
+        margin-bottom: 0;
+    }
+    .navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+    /* --- THE CSS FUNCTIONAL MECHANICS --- */
+    
+    /* When active: applies structural visibility properties and triggers backdrop blur layout rules */
+    #menu-toggle:checked ~ .navbar {
+        opacity: 1;
+        pointer-events: auto;
+        background-color: rgba(255, 255, 255, 0.3); /* Semitransparent white canvas layer */
+        backdrop-filter: blur(15px); /* Triggers system rendering blur layer engine */
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    /* Snaps card up and pops it into perfect geometric positioning scales upon target evaluation */
+    #menu-toggle:checked ~ .navbar ul {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Morphs horizontal bar stacks into close window icons when checked execution states activate */
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+ html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+
+  #home-container{
+    height: 130vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 10px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    margin-left: 26vw;
+    width: 43vw;
+    text-align: center;
+    padding: 20px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    margin-left: 7vw;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: -3vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 0.71em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 8.3vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 30vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 7px 2px 10px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 35vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+#about{
+    position: relative;
+    top: 12vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.6em;
+    margin-left: -10vw;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 70px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-box{
+    /* calc(50% - 10px) ensures two cards take up exactly one row, 
+     subtracting half of the 20px gap so they fit perfectly side-by-side */
+  flex: 1 1 calc(50% - 12px); 
+  
+  box-sizing: border-box; /* Ensures padding/borders don't break the width */
+  
+  /* Optional styling to match your design */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 12vw;
+    height: 8vh;
+    margin-left: -12px;
+    margin-top: -10px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 50px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    margin-top: -8vh;
+    left: 4vw;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    margin-top: -8vh;
+    left: 7vw;
+    display: block;
+    text-align: center;
+    font-size: 1em;
+}
+#about-box2 > p{
+    position: relative;
+    top: 3vh;
+    left: 2px;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 5.6vw;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 5.3vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.75em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    margin-top: 15vh;
+    left: -6vw;
+    height: 66; 
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 18vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 320vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: #7F9094;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;        /* Puts cards side-by-side */
+    flex-wrap: wrap;            /* Allows cards to drop to a new line on smaller screens */
+    margin: 0 auto;                 /* Adds clean spacing between the cards */
+    justify-content: center;    /* Centers the cards on the screen */
+    padding: 20px;
+    box-sizing:border-box;
+    padding: 130px 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.card {
+   flex: 0 1 calc(50% - 12px); 
+    max-width: 380px;          
+    min-width: 280px;   
+    margin-top: 1px;
+    margin-bottom: 30px;
+    /* REMOVE all min-height or max-height values completely */
+    height: 500; /* Forces every single card to be the EXACT same height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stacks image on top, content on bottom */
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+  }
+    .card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes this section fill the remaining card space */
+  }
+  .featured-links{
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+  }
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.tag{
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+.featured-links{
+    display: flex;
+    gap: 8px;
+}
+.btn {
+    position: relative;
+    top: 1vh;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top: 15vh;
+    left: 8vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+   display:none;
+}
+.contact-card{
+    display: none;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+
+#Contact-Information{
+    position: relative;
+    top: 26vh;
+    left: 14vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 8.3vw;
+    top: 30vh;
+    height: 70vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 75vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: 35vh;
+    left: 6vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 77.5vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.73em;
+}
+#footer{
+    margin-top: 45vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:10px;
+    font-size:2rem;
+}
+#footer-center{
+    display: none;
+}
+#footer-right{
+    display: none;
+}
+
+.footer-section p{
+    padding: 20px -25px;    
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}
+}
+
+/* THIS IS FOR MOBILE SMALL WITH 320px */
+
+@media screen and (max-width: 320px){
+        /* 1. HIDE THE RAW CHECKBOX */
+    #menu-toggle {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 3.5vh; 
+        right: 30px;
+        cursor: pointer;
+        z-index: 1002; /* Keeps icon layered above the blur layer */
+    }
+    #navmenu{
+    background-color: white;
+    position: fixed;
+    top: -2px;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+    z-index: 1000;
+}
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 0;
+        background-color: #57534C;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar a{
+    text-decoration: none;
+    font-family: Segoe UI Semibold;
+    font-size: 1.4em;
+    color: #57534C;
+}
+
+    /* 1. The Navbar turns into the full-screen blur backdrop */
+    .navbar {
+        margin-top: 0; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        
+        /* Pulls the absolute visual center coordinates */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* Hides overlay background backdrop layer by default */
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 1001;
+    }
+
+    /* 2. The Link List transforms into the standalone floating container */
+    .navbar ul {
+        background-color: white;
+        width: 85%; /* Sets width bound constraint */
+        max-width: 360px; /* Restricts excessive stretching on tablet displays */
+        padding: 40px 20px; /* Generates breathing space inside card boundaries */
+        border-radius: 20px; /* Generates modern rounded visual aesthetics */
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Pulls card away from background depth */
+        text-align: center;
+        /* Drop-down pop and scaling entrance transition animation effects */
+        transform: scale(0.85) translateY(20px);
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    }
+
+    /* Clear any remaining inline structural parameters from desktop */
+    .navbar li {
+        display: block;
+        margin: 32px 0;
+    }
+    
+    /* Ensure the target CTA container resets spacing cleanly */
+    .navbar li:last-child {
+        margin-bottom: 0;
+    }
+    .navbar a:hover{
+    cursor: default;
+    color: #4477CF;
+    transition: all 0.2s ease;transition: all 0.2s ease;
+}
+    /* --- THE CSS FUNCTIONAL MECHANICS --- */
+    
+    /* When active: applies structural visibility properties and triggers backdrop blur layout rules */
+    #menu-toggle:checked ~ .navbar {
+        opacity: 1;
+        pointer-events: auto;
+        background-color: rgba(255, 255, 255, 0.3); /* Semitransparent white canvas layer */
+        backdrop-filter: blur(15px); /* Triggers system rendering blur layer engine */
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    /* Snaps card up and pops it into perfect geometric positioning scales upon target evaluation */
+    #menu-toggle:checked ~ .navbar ul {
+        transform: scale(1) translateY(0);
+    }
+
+    /* Morphs horizontal bar stacks into close window icons when checked execution states activate */
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    #menu-toggle:checked ~ .hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+ html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    justify-content: center;
+    overflow-x: hidden;
+}
+section{
+    scroll-margin-top: 80px;
+}
+
+  #home-container{
+    height: 130vh;
+    background: radial-gradient(ellipse at top center, #dce8ff 0%, #eef2ff 40%, #ffffff 75%);
+}
+
+#gradient-text{
+    position: relative;
+    top: -0.6vh;
+    margin-left: 10px;
+    padding: auto;
+    background: linear-gradient(to right, #3731E3,blue,blue,#7327EC, #661FF4, #7C3FEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#gradient-text:hover{
+    opacity: 75%;
+    cursor: default;
+}
+#boxanchor{
+    color: white;
+    display: inline-block;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 10px;
+    width: auto;
+    background: linear-gradient(90deg, #3C58FB 0%, #7143FB 50%, #941BFA 100%);
+}
+#boxanchor:hover{
+    opacity: 85%;
+    cursor: default;
+}
+#greeting{
+    position: relative;
+    top: 20vh;
+    margin-left: 22.9vw;
+    width: 55vw;
+    text-align: center;
+    padding: 10px;
+    background-color: #C6E7F1;
+    border-radius: 20px;
+    font-size: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#greeting::before{
+    content: "👋";
+}
+#IntroName{
+    position: relative;
+    top: 21vh;
+    margin-left: 7vw;
+    display: inline-block;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+}
+#Aspire{
+    position: relative;
+    top: 22vh;
+    text-align: center;
+    color: #505353;
+    margin: 0px auto;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#description{
+    position: relative;
+    top: 28vh;
+    left: -3vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 0.6em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#viewprojects{
+    position: relative;
+    top: 34vh;
+    left: 2vw;
+    padding: 7px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    padding: 7px 12px 12px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #4F6BFF, #7A3FF2, #D61C8C);
+}
+#Resume{
+    position: relative;
+    top: 34vh;
+    left: 19vw;
+    border: #D6D6D6 solid 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7em;
+    font-weight: 500;
+    padding: 7px 2px 10px;
+    text-align: center;
+    color: black;
+    background-color: rgba(242, 237, 253, 1);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.material-symbols-outlined{
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+#scroll-explore{
+    position: relative;
+    left: 33vw;
+    top: 40vh;
+    text-decoration: none;
+    color: #6C847C;
+    font-weight: 630;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    animation: bounce 0.9s infinite cubic-bezier(0.28, 0.84, 0.42, 1);
+}
+
+@keyframes bounce{
+    0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+ 
+#about{
+    position: relative;
+    top: 12vh;
+    left: 1.5vw;
+    margin: 0 auto;
+    width: 80vw;
+    text-align: center;
+}
+#aboutme{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#aboutdescription{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.51em;
+    margin-left: -10vw;
+    color: #7F9094;
+}
+#about-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 70px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.about-box{
+    /* calc(50% - 10px) ensures two cards take up exactly one row, 
+     subtracting half of the 20px gap so they fit perfectly side-by-side */
+  flex: 1 1 calc(50% - 12px); 
+  
+  box-sizing: border-box; /* Ensures padding/borders don't break the width */
+  
+  /* Optional styling to match your design */
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+#about-icon1, #about-icon2, #about-icon3, #about-icon4{
+    align-items: center;
+    font-size: 1.1em;
+    text-align: center;
+    padding: auto;
+    width: 15vw;
+    height: 8vh;
+    margin-left: -12px;
+    margin-top: -10px;
+    border-radius: 9px;
+    background: linear-gradient(to bottom right, #4F6BFF, #7A3FF2, #D61C8C);
+    line-height: 50px;
+}
+.about-box i{
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#about-box1 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 7vw;
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+#about-box1 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box2 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 8vw;
+    display: block;
+    text-align: center;
+    font-size: 0.7em;
+}
+#about-box2 > p{
+    position: relative;
+    top: 3vh;
+    left: 2px;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box3 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 9vw;
+    display: block;
+    text-align: center;
+    font-size: 1.1em;
+}
+#about-box3 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.9em;
+    text-align: center;
+    color: #7F9094;
+}
+#about-box4 > span{
+    position: relative;
+    margin-top: -7vh;
+    left: 5.3vw;
+    display: block;
+    text-align: center;
+    font-size: 1.23em;
+}
+#about-box4 > p{
+    position: relative;
+    top: 4vh;
+    display: block;
+    font-size: 0.78em;
+    text-align: center;
+    color: #7F9094;
+}
+#work-cont{
+    position: relative;
+    margin-top: 15vh;
+    left: -6vw;
+    height: 66; 
+    width: 90vw;
+    text-align: center;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    border-radius: 27px;
+    
+}
+#work-cont > p{
+    position: relative;
+    display: block;
+    top: 2.7vh;
+    left:auto;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;    
+    padding: 35px;
+    color: black;
+}
+.work-card{
+    position: relative;
+    top: -3vh;
+    display: inline-block;
+    background-color: white;
+    border-radius: 999px;
+    margin: 15px;
+    font-size: 1em;
+    padding: 13px;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.05);
+}
+.work-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    cursor: line;
+}
+#projects{
+    position: relative;
+    top: 18vh;
+    margin: 0 auto;
+    text-align: center;
+}
+#fproject{
+    position: relative;
+    top: 0vh;
+    left: 1vw;
+    margin: 0 auto;
+    height: 320vh;  /* adjust this value based on the size of the project container */
+    width: 96vw;
+    text-align: center;
+    background: #f1eefb;
+}
+#Featured-Project{
+    position: relative;
+    top: 12.2vh;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#featured-description{
+    position: relative;
+    top: 14vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: #7F9094;
+}
+.cards-container {
+    display: flex;
+    flex-direction: row;        /* Puts cards side-by-side */
+    flex-wrap: wrap;            /* Allows cards to drop to a new line on smaller screens */
+    margin: 0 auto;                 /* Adds clean spacing between the cards */
+    justify-content: center;    /* Centers the cards on the screen */
+    padding: 20px;
+    box-sizing:border-box;
+    padding: 130px 10px;
+    max-width: 1200px;
+    width: 100%;
+
+}
+.card {
+   flex: 0 1 calc(50% - 12px); 
+    max-width: 380px;          
+    min-width: 280px;   
+    margin-top: 1px;
+    margin-bottom: 30px;
+    /* REMOVE all min-height or max-height values completely */
+    height: 500; /* Forces every single card to be the EXACT same height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stacks image on top, content on bottom */
+    overflow: hidden;
+    background: white;
+    border-radius: 18px;
+  }
+    .card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  .card-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Makes this section fill the remaining card space */
+  }
+  .featured-links{
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+  }
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.tag{
+    background:#e0e7ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:999px;
+    font-size:14px;
+}
+.featured-links{
+    display: flex;
+    gap: 8px;
+}
+.btn {
+    position: relative;
+    top: 1vh;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    font-size: 0.9em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #374151;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: background 0.18s ease, color 0.18s ease;
+}
+.btn:hover {
+    background: #E0E0E0;
+    transition: 0.3s;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+#contact{
+    position: relative;
+    top: 15vh;
+    margin: 0 auto;
+    
+}
+#getintouch{
+    position: relative;
+    top: 15vh;
+    left: 8vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    color: #5933CC;
+}
+#contact-description{
+    position: relative;
+    top: 15vh;
+    left: 1vw;
+    margin: 0 auto;
+    max-width: 90vw;
+    font-size: 1.4em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #7F9094;
+}
+#contact-information-container{
+   display:none;
+}
+.contact-card{
+    display: none;
+}
+.contact-card:hover{
+    transform: translateY(-5px);
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12),
+    0 5px 10px rgba(0,0,0,0.08);
+}
+
+#Contact-Information{
+    position: relative;
+    top: 26vh;
+    left: 14vw;
+}
+#contact-form-container{
+    position: relative;
+    left: 8.3vw;
+    top: 30vh;
+    height: 70vh;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+.form-group{
+    top: -3.4vh;
+    position:relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 15px;
+}
+label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000;
+}
+input, textarea {
+    width: 75vw;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f4f5f7; 
+    font-size: 17px;
+    box-sizing: border-box;
+    resize: none;
+    writing-mode: horizontal-tb;
+}
+input::placeholder, textarea::placeholder {
+    color: #a0a8b3;
+    text-align: left;
+    display: block;
+}
+textarea {
+    min-height: 120px;
+}   
+#send-message{
+    width: 100%;
+    background: linear-gradient(90deg, #3b82f6, #9333ea); 
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#send-message:hover{
+    opacity: 0.9;
+}
+#LWT{
+    position: relative;
+    top: 35vh;
+    left: 6vw;
+    text-align: left;
+    padding: 25px;
+    background: linear-gradient(100deg, #def6fd 1%, #f1eefb 100%);
+    width: 77.5vw;
+    height: 15vh;
+    border-radius: 17px;
+}
+#LWT > p, pre{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 0.73em;
+}
+#footer{
+    margin-top: 45vh;
+    background:linear-gradient(to right,#081325,#13233f);
+    color:white;
+    padding:60px 40px 20px;
+}
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+.footer-section h2{
+    color:#4f8cff;
+    margin-bottom:10px;
+    font-size:2rem;
+}
+#footer-center{
+    display: none;
+}
+#footer-right{
+    display: none;
+}
+
+.footer-section p{
+    padding: 20px -25px;    
+    color:#b7c0d1;
+    line-height:1.8;
+    margin-bottom:10px;
+}
+.socials{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    font-size:1.2em;
+}
+.socials a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#26334d;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+.socials a:hover{
+    background:#3d4d70;
+    transform:translateY(-4px);
+}
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.1);
+    margin-top:40px;
+    padding-top:25px;
+    text-align:center;
+    color:#b7c0d1;
+}
+}

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=no">
+    <title>Personal Portfolio</title>
+    <link rel = "stylesheet"  href = "styles.css">
+    <link rel = "icon" type = "img/image/jpeg" href = "img/picportfolio.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=download" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- HOME SECTION -->
+ <section id = "home">
+    <div id = "navmenu">
+        <h1><span id = "gradient-text">Portfolio</span></h1>
+        <input type="checkbox" id="menu-toggle">
+    
+    <!-- The physical hamburger bars icon -->
+    <label for="menu-toggle" class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <nav class = "navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#fproject">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact"><span id = "boxanchor">Get in Touch</span></a></li>
+        </ul>
+    </nav>
+    </div>
+    
+    <div id = "home-container">
+
+    <p id = "greeting"> Welcome to my portfolio</p>
+
+    <h1><span id = "IntroName">Hi, I'm Noriel Panis</span></h1>
+
+    <p id = "Aspire">Aspring Full Stack, Web, App, & Game Developer</p>
+
+    <pre id = "description">I build unique, creative, user-friendly digital projects. Passionate about
+turning ideas into reality through code. </pre>
+
+<a id = "viewprojects" href="#projects">View My Projects</a>
+
+<a href = "Noriel_Resume (Revised).pdf" download = "Noriel_FullStack_Resume.pdf" id = "Resume"><span class="material-symbols-outlined">
+download
+</span> Download Resume</a>
+
+<pre><a id = "scroll-explore" href = "#about"><i class="fa-solid fa-arrow-down"></i>   Scroll to explore</a></pre>
+
+</div>
+</section>
+
+<!-- ABOUT ME SECTION -->
+
+<section id = "about">
+    <h1><span id = "aboutme">About Me</span></h1>
+    <pre id = "aboutdescription">I am a passionate and dedicated aspiring Full Stack, Web, App, and Game Developer.
+ With 3+ years of experience in software development.</pre>
+
+ <div id = "about-container">
+    <div class = "about-box" id = "about-box1">
+        <div id = "about-icon1">
+            <i class="fa-solid fa-code"></i>
+        </div>
+        <span>Development</span>
+        <p>Expert in JavaScript, PHP, MySQL, and modern web technologies</p>
+    </div>
+
+    <div class = "about-box" id = "about-box2">
+        <div id = "about-icon2">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <span>FullStack, Web, App, & Game Development</span>
+        <p>Building seamless experiences across all fields from frontend to backend</p>
+    </div>
+    <div class = "about-box" id = "about-box3">
+        <div id = "about-icon3">
+            <i class="fa-solid fa-gears"></i>
+        </div>
+        <span>Problem Solving</span>
+        <p>Solving complex challenges with efficient and scalable solutions</p>
+    </div>
+    <div class = "about-box" id = "about-box4">
+        <div id = "about-icon4">
+            <i class="fa-solid fa-users"></i>
+        </div>
+        <span>Team Collaboration</span>
+        <p>Strong communicator and enjoys working with others to solve problems and build efficient solutions in agile evironments</p>
+    </div>
+ </div>
+
+ <div id="work-cont">
+    <p>Languages, Technologies, and Tools I Work With</p>
+    <div id="LTT">
+        <span class="work-card">HTML</span>
+        <span class="work-card">CSS</span>
+        <span class="work-card">JavaScript</span>
+        <span class="work-card">PHP</span>
+        <span class="work-card">MySQL</span>
+        <span class="work-card">C</span>
+        <span class="work-card">C++</span>
+        <span class="work-card">Python</span>
+        <span class="work-card">Java</span>
+        <span class="work-card">C#</span>
+        <span class="work-card">Unity</span>
+        <span class="work-card">PostgreSQL</span>
+        <span class="work-card">Oracle Database</span>
+        <span class="work-card">MongoDB</span>
+        <span class="work-card">Express.js</span>  
+        <span class="work-card">AWS</span>
+        <span class="work-card">Railway</span>
+        <span class="work-card">Netlify</span>
+        <span class="work-card">Firebase</span>
+        <span class="work-card">Vercel</span>
+        <span class="work-card">React</span>
+        <span class="work-card">Node.js</span>
+        <span class="work-card">Git</span>
+        <span class="work-card">GitHub</span>
+        <span class="work-card">Figma</span>       
+        <span class="work-card">VS Code</span>
+    </div>
+</div>
+
+</section>
+
+<!-- PROJECTS SECTION -->
+
+<section id = "projects">
+    <div id="fproject">
+        <h1><span id = "Featured-Project">Featured Project</span></h1>
+        <p id = "featured-description">Here are my projects that shows my skills, experience, and passion for development</p>
+        
+     <div class="cards-container">
+
+    <!-- CARD 1 -->
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="card-content">
+        <h2>E-Commerce Platform</h2>
+
+        <p>
+          Full-stack e-commerce solution with payment integration...
+        </p>
+
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Stripe</span>
+        </div>
+
+        <div class = "featured-links">
+            <a href = "" class = "btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href = "" class = "btn"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="card-content">
+        <h2>Task Management App</h2>
+
+        <p>
+          Collaborative task management tool with real-time updates...
+        </p>
+
+        <div class="tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Socket.io</span>
+        </div>
+
+        <div class = "featured-links">
+            <a href = "" class = "btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href = "" class = "btn"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="card">
+
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="card-content">
+        <h2>AI Content Generator</h2>
+
+        <p>
+          AI-powered content creation tool that helps marketers...
+        </p>
+
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Python</span>
+          <span class="tag">OpenAI</span>
+          <span class="tag">FastAPI</span>
+        </div>
+
+        <div class = "featured-links">
+            <a href = "" class = "btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            <a href = "" class = "btn"><i class="fa-brands fa-github"></i> View Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id = "contact">
+  <h1><span id="getintouch">Get In Touch</span></h1>
+  <p id = "contact-description">Do you have any projects in mind? Job offers? Or just want to chat and say hello? Feel free to reach out!</p>
+  <h1 <span id = "Contact-Information">Contact Information</span></h1>
+
+  <div class="contact-information-container">
+    <div class="contact-card">
+      <div class="icon-box">
+        <i class="fa-regular fa-envelope"></i>
+      </div>
+
+      <div class="contact-info">
+        <h4>Email</h4>
+        <a href="mailto:norielp27@gmail.com" target="_blank"><p>norielp27@gmail.com</p></a>
+      </div>
+    </div>
+
+     <div class="contact-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+
+      <div class="contact-info">
+        <h4>Phone</h4>
+        <a href="tel:+639703831456"><p>+63 970 383 1456</p></a>
+      </div>
+    </div>
+
+    <div class="contact-card">
+      <div class="icon-box">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+
+      <div class="contact-info">
+        <h4>Location</h4>
+        <a href="https://maps.google.com/maps/place/San+Pedro,+Laguna" target="_blank"><p>San Pedro, Laguna, Philippines</p></a>
+      </div>
+    </div>
+  </div>
+
+  <div id = "contact-form-container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="John Doe" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="john.doe@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" placeholder="Project Inquiry" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea  name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+      </div>
+      
+      <button type="submit" id = "send-message"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+
+  <div id="LWT">
+    <p>Let's Work Together!</p>
+    <pre>I'm always open to discussing new projects, creative ideas, 
+opportunities to be part of your vision.</pre>
+  </div>
+
+  <footer id="footer">
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-section">
+      <h2>Portfolio</h2>
+
+      <p>
+        Building digital experiences that make a difference.
+      </p>
+
+      <div class="socials">
+        <a href="https://github.com/NorielPanis" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/noriel-panis-119026382/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/norieltud.panis" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/_nxri3l_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:norielp27@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-section" id = "footer-center">
+      <h3>Quick Links</h3>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-section" id = "footer-right">
+      <h3>Get In Touch</h3>
+
+      <p>San Pedro, Laguna, Philippines</p>
+      <p>norielp27@gmail.com</p>
+      <p>+63 970 383 1456</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    Made with 💙 by Noriel Tud Panis © 2026
+  </div>
+
+    </div>
+  </footer>
+</section>
+</body>
+</html> 
